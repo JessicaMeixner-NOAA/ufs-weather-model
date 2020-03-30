@@ -50,7 +50,15 @@ export LIST_FILES="atmos_4xdaily.tile1.nc \
                    RESTART/phy_data.tile4.nc \
                    RESTART/phy_data.tile5.nc \
                    RESTART/phy_data.tile6.nc \
-                   out_grd.glo_30m"
+                   20161003.120000.out_pnt.points \ 
+                   20161003.120000.out_grd.glo_30m \
+                   20161003.123000.out_pnt.points \
+                   20161003.123000.out_grd.glo_30m \
+                   20161003.130000.out_pnt.points \
+                   20161003.130000.out_grd.glo_30m \
+                   20161004.000000.out_grd.glo_30m \
+                   20161004.000000.out_pnt.points \
+                   20161004.000000.restart.glo_30m"
 
 
 export_fv3
@@ -67,6 +75,7 @@ export OUTPUT_FILE="'nemsio'"
 export WRITE_NEMSIOFLIP=.true.
 export WRITE_FSYNCFLAG=.true.
 
+export FHROT="0"
 export CPL=.true.
 export CPLWAV=.T.
 export atm_model='fv3'
@@ -74,7 +83,7 @@ export atm_petlist_bounds="0 149"
 export wav_model='ww3'
 export wav_petlist_bounds="150 263"
 export coupling_interval_sec=3600.0  #coupling time step, want it to be multiple of 1800 and FV3 time step
-export NEMS_CONFIGURE="nems.configure.blocked_atm_wav.IN"
+export NEMS_CONFIGURE="nems.configure.leap_atm_wav.IN"
 
 export INPUT_NML=gfdlmp.nml.IN
 export FV3_RUN=gfdlmp_run.IN

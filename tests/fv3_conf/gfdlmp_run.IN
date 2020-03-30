@@ -20,6 +20,9 @@ else
       RFILE_NEW="${RFILE_OLD//${RESTART_FILE_PREFIX}./}"
       cp $RFILE INPUT/${RFILE_NEW}
     done
+    if [ $CPLWAV = .T. ]; then
+      cp ../${TEST_NAME}${BL_SUFFIX}/20161003.120000.restart.glo_30m restart.glo_30m
+    fi 
   fi
 fi
 

@@ -35,6 +35,7 @@ write_fsyncflag:         @[WRITE_FSYNCFLAG]
 imo:                     @[IMO]
 jmo:                     @[JMO]
 
+fhrot:                   @[FHROT]
 nfhout:                  @[NFHOUT]
 nfhmax_hf:               @[NFHMAX_HF]
 nfhout_hf:               @[NFHOUT_HF]

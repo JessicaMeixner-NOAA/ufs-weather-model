@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Default account "nems"
-export ACCNR=${ACCNR:-nems}
+#export ACCNR=${ACCNR:-nems}
+export ACCNR="fv3-cpu" 
 
 case $(hostname -f) in
 

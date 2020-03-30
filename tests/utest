@@ -105,6 +105,7 @@ run_utests() {
         MOUNTAIN=.T.
         NA_INIT=0
         NSTF_NAME=2,0,1,0,5
+        FHROT=12
 
         LIST_FILES="RESTART/coupler.res RESTART/fv_core.res.nc RESTART/fv_core.res.tile1.nc \
                     RESTART/fv_core.res.tile2.nc RESTART/fv_core.res.tile3.nc
@@ -418,7 +419,7 @@ for name in $ut_compile_cases; do
   #echo "NEMS_VER: $NEMS_VER"
 
   echo "Compiling for ${name} with compile option ${NEMS_VER}"
-  ./compile.sh $PATHTR/FV3 $MACHINE_ID "${NEMS_VER}" $name >${LOG_DIR}/compile_${TEST_NAME}_$name.log 2>&1
+  ./compile.sh $PATHTR/FV3 $MACHINE_ID "${NEMS_VER}" $name NO NO >${LOG_DIR}/compile_${TEST_NAME}_$name.log 2>&1
   echo "Compiling done for ${name} with compile option ${NEMS_VER}"
 done
 
@@ -428,6 +429,7 @@ done
 mkdir -p ${STMP}/${USER}
 NEW_BASELINE=${STMP}/${USER}/FV3_UT/UNIT_TEST
 RTPWD=$DISKNM/NEMSfv3gfs/develop-20200202
+RTPWD=/scratch1/NCEPDEV/stmp4/Jessica.Meixner/unit-20200323
 if [[ $CREATE_BASELINE == true ]]; then
   rm -rf $NEW_BASELINE
   mkdir -p $NEW_BASELINE  

@@ -56,17 +56,17 @@ export LIST_FILES="atmos_4xdaily.tile1.nc \
 export_fv3
 
 export TASKS=192
-export TPN=40
-export THRD=1
+export TPN=20
+export THRD=2
 
 DT_ATMOS="1200"
 export LGFDLMPRAD=.true.
 export EFFR_IN=.true.
 
-#export OUTPUT_GRID="'gaussian_grid'"
-#export OUTPUT_FILE="'nemsio'"
 export OUTPUT_GRID="'cubed_sphere_grid'"
 export OUTPUT_FILE="'netcdf'"
+#export OUTPUT_GRID="'gaussian_grid'"
+#export OUTPUT_FILE="'nemsio'"
 export WRITE_NEMSIOFLIP=.true.
 export WRITE_FSYNCFLAG=.true.
 

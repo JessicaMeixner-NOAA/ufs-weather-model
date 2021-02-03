@@ -87,15 +87,16 @@ export ocn_petlist_bounds=$OPB_cpl_wwav
 export ice_petlist_bounds=$IPB_cpl_wwav
 export wav_petlist_bounds=$WPB_cpl_wwav
 
-export TPN=40
-export THRD=1
-
 # atm/ocn/ice resolution
 export ATMRES='C384'
 export NPX=385
 export NPY=385
 export IMO=1536
 export JMO=768
+
+
+export TPN=20
+export THRD=2
 
 export OCNRES='025'
 export ICERES='0.25'

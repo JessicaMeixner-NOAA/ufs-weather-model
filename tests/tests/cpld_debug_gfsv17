@@ -123,6 +123,6 @@ export DO_GWD_OPT_PSL=.true.
 export DO_GSL_DRAG_SS=.false.
 
 
-export WW3_DTFLD=720
-export WW3_DTPNT=720
+export WW3_DTFLD=900
+export WW3_DTPNT=900
 
